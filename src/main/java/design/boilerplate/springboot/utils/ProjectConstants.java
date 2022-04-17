@@ -5,7 +5,7 @@ import java.util.Locale;
 /**
  * Created on Ağustos, 2020
  *
- * @author Faruk
+ * @author taha
  */
 public final class ProjectConstants {
 

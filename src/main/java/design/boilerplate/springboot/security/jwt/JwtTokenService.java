@@ -1,6 +1,7 @@
 package design.boilerplate.springboot.security.jwt;
 
 import design.boilerplate.springboot.model.User;
+import design.boilerplate.springboot.model.UserRole;
 import design.boilerplate.springboot.security.dto.AuthenticatedUserDto;
 import design.boilerplate.springboot.security.dto.LoginRequest;
 import design.boilerplate.springboot.security.dto.LoginResponse;
@@ -15,7 +16,7 @@ import org.springframework.stereotype.Service;
 /**
  * Created on Ağustos, 2020
  *
- * @author Faruk
+ * @author taha
  */
 @Slf4j
 @Service
@@ -39,7 +40,14 @@ public class JwtTokenService {
 
 		final AuthenticatedUserDto authenticatedUserDto = userService.findAuthenticatedUserByUsername(username);
 
-		final User user = UserMapper.INSTANCE.convertToUser(authenticatedUserDto);
+		//final User user = UserMapper.INSTANCE.convertToUser(authenticatedUserDto);
+		User user = new User();
+
+		user.setUsername(authenticatedUserDto.getUsername());
+		user.setName(authenticatedUserDto.getName());
+		user.setPassword(authenticatedUserDto.getPassword());
+		user.setUserRole(authenticatedUserDto.getUserRole());
+		
 		final String token = jwtTokenManager.generateToken(user);
 
 		log.info(" {} has successfully logged in!", user.getUsername());

@@ -20,7 +20,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 /**
  * Created on Ağustos, 2020
  *
- * @author Faruk
+ * @author taha
  */
 @Configuration
 @EnableWebSecurity

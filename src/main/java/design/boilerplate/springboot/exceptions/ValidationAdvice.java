@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 /**
  * Created on Ağustos, 2020
  *
- * @author Faruk
+ * @author taha
  */
 @Slf4j
 @RestControllerAdvice

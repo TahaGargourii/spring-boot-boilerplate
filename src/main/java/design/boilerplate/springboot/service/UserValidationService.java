@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 /**
  * Created on Ağustos, 2020
  *
- * @author Faruk
+ * @author taha
  */
 @Slf4j
 @Service

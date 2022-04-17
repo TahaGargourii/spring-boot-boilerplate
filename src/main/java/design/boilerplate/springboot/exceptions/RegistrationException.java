@@ -6,7 +6,7 @@ import lombok.RequiredArgsConstructor;
 /**
  * Created on Ağustos, 2020
  *
- * @author Faruk
+ * @author taha
  */
 @Getter
 @RequiredArgsConstructor

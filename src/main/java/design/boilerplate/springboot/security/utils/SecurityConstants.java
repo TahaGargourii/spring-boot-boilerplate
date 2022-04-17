@@ -7,7 +7,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 /**
  * Created on Ağustos, 2020
  *
- * @author Faruk
+ * @author taha
  */
 public class SecurityConstants {
 

@@ -17,7 +17,7 @@ import org.springframework.stereotype.Service;
 /**
  * Created on Ağustos, 2020
  *
- * @author Faruk
+ * @author taha
  */
 @Slf4j
 @Service
@@ -45,8 +45,11 @@ public class UserServiceImpl implements UserService {
 
 		userValidationService.validateUser(registrationRequest);
 
-		final User user = UserMapper.INSTANCE.convertToUser(registrationRequest);
-		user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
+		User user = new User();
+		//= UserMapper.INSTANCE.convertToUser(registrationRequest);
+		
+		user.setEmail(registrationRequest.getEmail());
+		user.setPassword(bCryptPasswordEncoder.encode(registrationRequest.getPassword()));
 		user.setUserRole(UserRole.USER);
 
 		userRepository.save(user);

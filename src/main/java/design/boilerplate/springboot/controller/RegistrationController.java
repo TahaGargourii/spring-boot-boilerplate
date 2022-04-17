@@ -13,7 +13,7 @@ import javax.validation.Valid;
 /**
  * Created on Ağustos, 2020
  *
- * @author Faruk
+ * @author taha
  */
 @CrossOrigin
 @RestController
@@ -24,7 +24,8 @@ public class RegistrationController {
 	private final UserService userService;
 
 	@PostMapping
-	public ResponseEntity<RegistrationResponse> registrationRequest(@Valid @RequestBody RegistrationRequest registrationRequest) {
+	public ResponseEntity<RegistrationResponse> registrationRequest(
+			@Valid @RequestBody RegistrationRequest registrationRequest) {
 
 		final RegistrationResponse registrationResponse = userService.registration(registrationRequest);
 

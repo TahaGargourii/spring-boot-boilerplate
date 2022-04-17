@@ -8,7 +8,7 @@ import design.boilerplate.springboot.security.dto.RegistrationResponse;
 /**
  * Created on Ağustos, 2020
  *
- * @author Faruk
+ * @author taha
  */
 public interface UserService {
 

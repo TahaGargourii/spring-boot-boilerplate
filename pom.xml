@@ -20,16 +20,16 @@
 
     <developers>
         <developer>
-            <name>Faruk Genç</name>
-            <email>omer@farukgenc.com</email>
-            <url>https://farukgenc.com</url>
+            <name>taha</name>
+            <email>omer@taha.com</email>
+            <url>https://taha.com</url>
         </developer>
     </developers>
 
     <properties>
         <java.version>1.8</java.version>
         <jwt.version>0.9.0</jwt.version>
-        <lombok.version>1.18.12</lombok.version>
+        <lombok.version>1.18.22</lombok.version>
         <mapstruct.version>1.3.1.Final</mapstruct.version>
         <apache-commons.version>3.10</apache-commons.version>
         <springfox-swagger2.version>2.9.2</springfox-swagger2.version>
@@ -123,6 +123,19 @@
             </exclusions>
         </dependency>
 
+		<dependency>
+		    <groupId>javax.validation</groupId>
+		    <artifactId>validation-api</artifactId>
+		    <version>2.0.1.Final</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.hibernate.validator</groupId>
+		    <artifactId>hibernate-validator</artifactId>
+		    <version>6.0.13.Final</version>
+		</dependency>
+		
+		
     </dependencies>
 
     <build>
@@ -138,4 +151,5 @@
 
     </build>
 
+	
 </project>

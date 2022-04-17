@@ -14,7 +14,7 @@ import static design.boilerplate.springboot.security.utils.SecurityConstants.*;
 /**
  * Created on Ağustos, 2020
  *
- * @author Faruk
+ * @author taha
  */
 @Component
 public class JwtTokenManager {

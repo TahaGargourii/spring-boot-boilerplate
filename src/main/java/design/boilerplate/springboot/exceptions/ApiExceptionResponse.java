@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 /**
  * Created on Ağustos, 2020
  *
- * @author Faruk
+ * @author taha
  */
 @Getter
 @Setter

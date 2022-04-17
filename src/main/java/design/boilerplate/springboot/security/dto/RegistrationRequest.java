@@ -11,7 +11,7 @@ import javax.validation.constraints.NotEmpty;
 /**
  * Created on Ağustos, 2020
  *
- * @author Faruk
+ * @author taha
  */
 @Getter
 @Setter

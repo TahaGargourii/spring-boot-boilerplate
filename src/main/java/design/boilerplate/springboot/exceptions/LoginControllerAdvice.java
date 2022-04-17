@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 /**
  * Created on Ağustos, 2020
  *
- * @author Faruk
+ * @author taha
  */
 @RestControllerAdvice(basePackageClasses = LoginController.class)
 public class LoginControllerAdvice {

@@ -12,7 +12,7 @@ import javax.validation.Valid;
 /**
  * Created on Ağustos, 2020
  *
- * @author Faruk
+ * @author taha
  */
 @CrossOrigin
 @RestController

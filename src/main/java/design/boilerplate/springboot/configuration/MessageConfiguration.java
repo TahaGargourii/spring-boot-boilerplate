@@ -11,7 +11,7 @@ import static design.boilerplate.springboot.utils.ProjectConstants.DEFAULT_ENCOD
 /**
  * Created on Ağustos, 2020
  *
- * @author Faruk
+ * @author taha
  */
 @Configuration
 public class MessageConfiguration {

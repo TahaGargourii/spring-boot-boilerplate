@@ -24,7 +24,7 @@ import static design.boilerplate.springboot.utils.ProjectConstants.PROJECT_BASE_
 /**
  * Created on Ağustos, 2020
  *
- * @author Faruk
+ * @author taha
  */
 @Configuration
 @EnableSwagger2

@@ -10,7 +10,7 @@ import java.util.Objects;
 /**
  * Created on Ağustos, 2020
  *
- * @author Faruk
+ * @author taha
  */
 @Service
 public class GeneralMessageAccessor {

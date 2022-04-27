@@ -1,13 +1,17 @@
 package design.boilerplate.springboot.repository;
+import design.boilerplate.springboot.model.Team;
 import design.boilerplate.springboot.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 	
-	public interface TeamRepository extends JpaRepository<User, Long> {
+	public interface TeamRepository extends JpaRepository<Team, Long> {
 
-		User findByUsername(String username);
-
+		Team findByname(String username);
+		Team findByMemebers (String Membername) ;
+		Team findByField(String field) ;
+		Team findById(int id) ;
 		boolean existsByEmail(String email);
+		
 
 		boolean existsByUsername(String username);
 

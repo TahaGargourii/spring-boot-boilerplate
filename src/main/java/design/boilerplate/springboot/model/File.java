@@ -9,7 +9,6 @@ import javax.persistence.*;
 	@Setter
 	@Entity
 	@NoArgsConstructor
-	@AllArgsConstructor
 	@Table(name = "FILES")
 	public class File {
 
@@ -23,14 +22,25 @@ import javax.persistence.*;
 		
 		private String uploadedBy;
 
-		private String Field;
-		
-		
-		
-		
-		
+		private String field;
 
+		
+		
+		@Override
+		public String toString() {
+			return "File [id=" + id + ", fileName=" + fileName + ", dateOfUpload=" + dateOfUpload + ", uploadedBy="
+					+ uploadedBy + ", Field=" + field + "]";
+		}
 
+		public File(String fileName, char dateOfUpload, String uploadedBy, String field) {
+			super();
+			this.fileName = fileName;
+			this.dateOfUpload = dateOfUpload;
+			this.uploadedBy = uploadedBy;
+			this.field = field;
+		}
+		
+		
 
 
 }

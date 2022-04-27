@@ -38,7 +38,15 @@ public class Fond {
 		this.capTable = capTable;
 	}
 	
+	public String getFname() {
+		return name;
+	}
+	public void setFname(String fname) {
+		name = fname;
+	}
+
 	private int amount ;
+	private String name ;
 	private String fundedBy ; 
 	private String capTable ;
 	
